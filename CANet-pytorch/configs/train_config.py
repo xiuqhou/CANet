@@ -33,8 +33,8 @@ test_dataset = CocoDetection(
 model_path = "configs/canet/canet_resnet50_800_1333.py"
 
 # specify a checkpoint folder to resume, or a pretrained ".pth" to finetune, for example:
-# checkpoints/salience_detr_resnet50_800_1333/train/2024-03-22-09_38_50
-# checkpoints/salience_detr_resnet50_800_1333/train/2024-03-22-09_38_50/best_ap.pth
+# checkpoints/canet_resnet50_800_1333/train/2024-03-22-09_38_50
+# checkpoints/canet_resnet50_800_1333/train/2024-03-22-09_38_50/best_ap.pth
 resume_from_checkpoint = None
 
 learning_rate = 1e-2  # initial learning rate
