@@ -1,5 +1,3 @@
-English | [简体中文](README_cn.md)
-
 ## CANet
 
 This is the official implementation of the paper [CANet: Contextual information and spatial attention based network for detecting small defects in manufacturing industry](https://www.sciencedirect.com/science/article/abs/pii/S0031320323002583) accepeted to journal [Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition). Author: [Xiuquan Hou](https://github.com/xiuqhou), [Meiqin Liu](https://scholar.google.com/citations?user=T07OWMkAAAAJ&hl=zh-CN&oi=ao), Senlin Zhang, [Ping Wei](https://scholar.google.com/citations?user=1OQBtdcAAAAJ&hl=zh-CN&oi=ao), [Badong Chen](https://scholar.google.com/citations?user=mq6tPX4AAAAJ&hl=zh-CN&oi=ao).
@@ -17,7 +15,7 @@ This is the official implementation of the paper [CANet: Contextual information 
 We provide two implementations based on [MMDetection](https://github.com/open-mmlab/mmdetection) and [PyTorch](https://pytorch.org/). For better scalability and simpler environment configuration, I will mainly maintain the implementation based on pure PyTorch, which is more recommended to use.
 
 - [CANet based on MMDetection](CANet-MMDetection/README.md)
-- [CANet based on pure PyTorch](CANet-pure-pytorch/README.md)
+- [CANet based on pure PyTorch](CANet-pytorch/README.md)
 
 ## BibTeX
 

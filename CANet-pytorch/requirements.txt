@@ -9,3 +9,4 @@ tensorboard
 safetensors
 ninja
 yapf
+onnx

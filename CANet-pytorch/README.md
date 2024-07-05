@@ -1,5 +1,11 @@
 ## CANet based on PyTorch
 
+- Paper: [CANet: Contextual information and spatial attention based network for detecting small defects in manufacturing industry](https://www.sciencedirect.com/science/article/abs/pii/S0031320323002583)
+- Author: [Xiuquan Hou](https://github.com/xiuqhou), [Meiqin Liu](https://scholar.google.com/citations?user=T07OWMkAAAAJ&hl=zh-CN&oi=ao), Senlin Zhang, [Ping Wei](https://scholar.google.com/citations?user=1OQBtdcAAAAJ&hl=zh-CN&oi=ao), [Badong Chen](https://scholar.google.com/citations?user=mq6tPX4AAAAJ&hl=zh-CN&oi=ao).
+
+**💖 If our CANet is helpful to your researches or projects, please help star this repository. Thanks! 🤗**
+
+
 ### Installation
 
 - Change Directory to `CANet-MMDetection`:
@@ -98,8 +104,8 @@ test_dataset = CocoDetection(
 model_path = "configs/canet/canet_resnet50_800_1333.py"
 
 # specify a checkpoint folder to resume, or a pretrained ".pth" to finetune, for example:
-# checkpoints/salience_detr_resnet50_800_1333/train/2024-03-22-09_38_50
-# checkpoints/salience_detr_resnet50_800_1333/train/2024-03-22-09_38_50/best_ap.pth
+# checkpoints/canet_resnet50_800_1333/train/2024-03-22-09_38_50
+# checkpoints/canet_resnet50_800_1333/train/2024-03-22-09_38_50/best_ap.pth
 resume_from_checkpoint = None
 
 learning_rate = 1e-2  # initial learning rate
@@ -202,11 +208,11 @@ To train your own datasets, there are some things to do before training:
     {"supercategory": "indoor","id": 90,"name": "toothbrush"}
     ```
     You can simply set `num_classes` to a large enough number if not sure what to set. (For example, `num_classes = 92` or `num_classes = 365` also work for COCO.)
-3. If necessary, modify other parameters in model configs under [`configs/salience_detr`](configs/salience_detr/) and [`train_config.py`](train_config.py).
+3. If necessary, modify other parameters in model configs under [`configs/canet`](configs/canet/) and [`train_config.py`](train_config.py).
 
 ### Export an ONNX model
 
-For advanced users who want to deploy our model, we provide a script to export an ONNX file.
+Change `antialias=False` in line 74 in [base_detector.py](models/detectors/base_detector.py#L74), and run the following shell to export ONNX file. See `ONNXDetector` in [`tools/pytorch2onnx.py`](tools/pytorch2onnx.py) for inference using the ONNX file.
 
 ```shell
 python tools/pytorch2onnx.py \
@@ -216,5 +222,3 @@ python tools/pytorch2onnx.py \
     --simplify \  # use onnxsim to simplify the exported onnx file
     --verify  # verify the error between onnx model and pytorch model
 ```
-
-For inference using the ONNX file, see `ONNXDetector` in [`tools/pytorch2onnx.py`](tools/pytorch2onnx.py)

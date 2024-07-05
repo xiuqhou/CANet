@@ -1,5 +1,10 @@
 ## CANet based on MMDetection
 
+- Paper: [CANet: Contextual information and spatial attention based network for detecting small defects in manufacturing industry](https://www.sciencedirect.com/science/article/abs/pii/S0031320323002583)
+- Author: [Xiuquan Hou](https://github.com/xiuqhou), [Meiqin Liu](https://scholar.google.com/citations?user=T07OWMkAAAAJ&hl=zh-CN&oi=ao), Senlin Zhang, [Ping Wei](https://scholar.google.com/citations?user=1OQBtdcAAAAJ&hl=zh-CN&oi=ao), [Badong Chen](https://scholar.google.com/citations?user=mq6tPX4AAAAJ&hl=zh-CN&oi=ao).
+
+**💖 If our CANet is helpful to your researches or projects, please help star this repository. Thanks! 🤗**
+
 Code is tested with `python=3.10`, `pytorch=1.12.1`, `torchvision=0.13.1`, `mmcv-full=1.7.0`, `mmdet=2.25.2`, other version may also work.
 
 - Change Directory to `CANet-MMDetection`:
