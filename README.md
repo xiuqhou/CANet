@@ -17,6 +17,11 @@ We provide two implementations based on [MMDetection](https://github.com/open-mm
 - [CANet based on MMDetection](CANet-MMDetection/README.md)
 - [CANet based on pure PyTorch](CANet-pytorch/README.md)
 
+## Update
+
+- [2024.7.5] Add the implementation of CANet based on pure PyTorch.
+- [2023.3.27] [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0031320323002583) is accepted to [Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition), code is available.
+
 ## BibTeX
 
 If you find our work helpful for your research, please consider citing the following BibTeX entry or give us a star ⭐.
