@@ -8,7 +8,7 @@
 
 ### Installation
 
-- Change Directory to `CANet-MMDetection`:
+- Change Directory to `CANet-pytorch`:
   ```shell
   cd CANet-pytorch
   ```
