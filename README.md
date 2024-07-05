@@ -14,8 +14,8 @@ This is the official implementation of the paper [CANet: Contextual information 
 
 We provide two implementations based on [MMDetection](https://github.com/open-mmlab/mmdetection) and [PyTorch](https://pytorch.org/). For better scalability and simpler environment configuration, I will mainly maintain the implementation based on pure PyTorch, which is more recommended to use.
 
-- [CANet based on MMDetection](CANet-MMDetection/README.md)
-- [CANet based on pure PyTorch](CANet-pytorch/README.md)
+- [CANet based on MMDetection](CANet-MMDetection/)
+- [CANet based on pure PyTorch](CANet-pytorch/)
 
 ## Update
 
