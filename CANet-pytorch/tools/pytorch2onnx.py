@@ -125,7 +125,9 @@ def pytorch2onnx():
         err_msg = "The numerical values are different between Pytorch and ONNX"
         err_msg += "But it does not necessarily mean the exported ONNX is problematic."
         for onnx_res, pytorch_res in zip(onnx_results, pytorch_results):
-            np.testing.assert_allclose(onnx_res, pytorch_res, rtol=1e-3, atol=1e-5, err_msg=err_msg)
+            np.testing.assert_allclose(
+                onnx_res, pytorch_res.detach(), rtol=1e-3, atol=1e-5, err_msg=err_msg
+            )
         print("The numerical values are the same between Pytorch and ONNX")
 
 
