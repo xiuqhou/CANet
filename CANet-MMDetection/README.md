@@ -18,7 +18,7 @@ Code is tested with `python=3.10`, `pytorch=1.12.1`, `torchvision=0.13.1`, `mmcv
 - Install MMCV and MMDetection:
   ```shell
   pip install -U openmim
-  mim install mmcv-full=1.7.0
+  mim install mmcv-full==1.7.0
   pip install -v -e .
   ```
 - Prepare datasets and put them in the `data/` directory:
